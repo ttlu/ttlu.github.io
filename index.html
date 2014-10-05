@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Methylation EDA</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Methylation EDA">
+  <meta name="author" content="TingTing Lu">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Methylation EDA</h1>
+    <h2>Sen Lab - University of Michigan</h2>
+    <p>TingTing Lu<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Methylation Data</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Number of unique Genes  : 23,369</li>
+<li>Number of total CpG Sites : 481,178</li>
+<li>Number of selected Genes : 25</li>
+<li>NUmber of selcted CpG Sites : 828</li>
+</ul>
+
+<h2>List of Selected Genes</h2>
+
+<table><thead>
+<tr>
+<th align="left">Gene</th>
+<th align="left">Chromosome</th>
+<th align="left">Num.Sites</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left">BDNF</td>
+<td align="left">3</td>
+<td align="left">68</td>
+</tr>
+<tr>
+<td align="left">STK32C</td>
+<td align="left">2</td>
+<td align="left">145</td>
+</tr>
+<tr>
+<td align="left">DOK6</td>
+<td align="left">10</td>
+<td align="left">23</td>
+</tr>
+<tr>
+<td align="left">UBE2D3</td>
+<td align="left">17</td>
+<td align="left">30</td>
+</tr>
+<tr>
+<td align="left">DEPDC7</td>
+<td align="left">3</td>
+<td align="left">12</td>
+</tr>
+<tr>
+<td align="left">NDEL1</td>
+<td align="left">9</td>
+<td align="left">19</td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <article data-timings="">
+    <table><thead>
+<tr>
+<th align="left">Gene</th>
+<th align="left">Chromosome</th>
+<th align="left">Num.Sites</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left">ACP1</td>
+<td align="left">12</td>
+<td align="left">4</td>
+</tr>
+<tr>
+<td align="left">NR3C1</td>
+<td align="left">18</td>
+<td align="left">41</td>
+</tr>
+<tr>
+<td align="left">GABRA3</td>
+<td align="left">23</td>
+<td align="left">8</td>
+</tr>
+<tr>
+<td align="left">MAST4</td>
+<td align="left">18</td>
+<td align="left">70</td>
+</tr>
+<tr>
+<td align="left">GFAP</td>
+<td align="left">9</td>
+<td align="left">21</td>
+</tr>
+<tr>
+<td align="left">ALDH1L1</td>
+<td align="left">16</td>
+<td align="left">33</td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <article data-timings="">
+    <table><thead>
+<tr>
+<th align="left">Gene</th>
+<th align="left">Chromosome</th>
+<th align="left">Num.Sites</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left">SOX9</td>
+<td align="left">9</td>
+<td align="left">20</td>
+</tr>
+<tr>
+<td align="left">GLUL</td>
+<td align="left">1</td>
+<td align="left">28</td>
+</tr>
+<tr>
+<td align="left">GJA1</td>
+<td align="left">19</td>
+<td align="left">16</td>
+</tr>
+<tr>
+<td align="left">GJB6</td>
+<td align="left">5</td>
+<td align="left">30</td>
+</tr>
+<tr>
+<td align="left">GRIK2</td>
+<td align="left">19</td>
+<td align="left">45</td>
+</tr>
+<tr>
+<td align="left">BEGAIN</td>
+<td align="left">6</td>
+<td align="left">37</td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <article data-timings="">
+    <table><thead>
+<tr>
+<th align="left">Gene</th>
+<th align="left">Chromosome</th>
+<th align="left">Num.Sites</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left">SLC6A4</td>
+<td align="left">9</td>
+<td align="left">16</td>
+</tr>
+<tr>
+<td align="left">MORC1</td>
+<td align="left">16</td>
+<td align="left">14</td>
+</tr>
+<tr>
+<td align="left">ZBTB20</td>
+<td align="left">16</td>
+<td align="left">70</td>
+</tr>
+<tr>
+<td align="left">MECP2</td>
+<td align="left">23</td>
+<td align="left">17</td>
+</tr>
+<tr>
+<td align="left">PTPRM</td>
+<td align="left">10</td>
+<td align="left">21</td>
+</tr>
+<tr>
+<td align="left">AGTPBP1</td>
+<td align="left">22</td>
+<td align="left">7</td>
+</tr>
+<tr>
+<td align="left">TBC1D8</td>
+<td align="left">12</td>
+<td align="left">33</td>
+</tr>
+</tbody></table>
+
+<h2>Baseline Stationary Covariates {.smaller .columns-2}</h2>
+
+<p>Table: Gender by Cohort</p>
+
+<pre><code>      2011   2012
+</code></pre>
+
+<hr>
+
+<p>Female       8     24
+Male        13     39</p>
+
+<p>Table: Gender by Age</p>
+
+<pre><code>      Older   Younger
+</code></pre>
+
+<hr>
+
+<p>Female        5        27
+Male         21        30</p>
+
+<p>Table: Gender by Ethnicity</p>
+
+<pre><code>      Caucasian   Other
+</code></pre>
+
+<hr>
+
+<p>Female           27       5
+Male             40      12</p>
+
+<p>Table: Gender by Marital Status</p>
+
+<pre><code>      NotSingle   Single
+</code></pre>
+
+<hr>
+
+<p>Female           15       17
+Male             23       29</p>
+
+<h2>{.smaller}</h2>
+
+<p>Table: Gender by Child Status</p>
+
+<pre><code>      No   Yes
+</code></pre>
+
+<hr>
+
+<p>Female    30     2
+Male      45     7</p>
+
+<p>Table: Gender by Institution</p>
+
+<pre><code>      Harvard   IUPUI   MGH   MUSC   UofCinci   UofIowa   UofM   Yale
+</code></pre>
+
+<hr>
+
+<p>Female          3       2     1      3          6         4     13      0
+Male            5       2     2      8          9         6     18      2</p>
+
+<p>Table: Gender by Specialty</p>
+
+<pre><code>      Emergency Medicine   Family Practice   Internal Medicine   Med Peds   Ob Gyn   Other   Pediatrics   Psychiatry   Surgery   Transitional
+</code></pre>
+
+<hr>
+
+<p>Female                     2                 4                   8          1        1       5            5            2         1              3
+Male                       1                 1                  13          1        0      18            4            1         8              4</p>
+
+<h2>{.smaller .columns-2}</h2>
+
+<p>Table: Cohort by Age</p>
+
+<pre><code>    Older   Younger
+</code></pre>
+
+<hr>
+
+<p>2011       10        11
+2012       16        46</p>
+
+<p>Table: Cohort by Ethnicity</p>
+
+<pre><code>    Caucasian   Other
+</code></pre>
+
+<hr>
+
+<p>2011           12       9
+2012           55       8</p>
+
+<p>Table: Cohort by Marital Status</p>
+
+<pre><code>    NotSingle   Single
+</code></pre>
+
+<hr>
+
+<p>2011            8       13
+2012           30       33</p>
+
+<p>Table: Cohort by Child Status</p>
+
+<pre><code>    No   Yes
+</code></pre>
+
+<hr>
+
+<p>2011    19     2
+2012    56     7</p>
+
+<h2>{.smaller}</h2>
+
+<p>Table: Cohort by Institution</p>
+
+<pre><code>    Harvard   IUPUI   MGH   MUSC   UofCinci   UofIowa   UofM   Yale
+</code></pre>
+
+<hr>
+
+<p>2011          5       0     0      1          0         0     13      2
+2012          3       4     3     10         15        10     18      0</p>
+
+<p>Table: Cohort by Specialty</p>
+
+<pre><code>    Emergency Medicine   Family Practice   Internal Medicine   Med Peds   Ob Gyn   Other   Pediatrics   Psychiatry   Surgery   Transitional
+</code></pre>
+
+<hr>
+
+<p>2011                     1                 1                   6          0        0       3            1            0         3              5
+2012                     2                 4                  15          2        1      20            8            3         6              2</p>
+
+<h2>{.smaller .columns-2}</h2>
+
+<p>Table: Age by Marital Status</p>
+
+<pre><code>       NotSingle   Single
+</code></pre>
+
+<hr>
+
+<p>Older             14       12
+Younger           24       33</p>
+
+<p>Table: Age by Child Status</p>
+
+<pre><code>       No   Yes
+</code></pre>
+
+<hr>
+
+<p>Older      18     8
+Younger    56     1</p>
+
+<h2>{.smaller}</h2>
+
+<p>Table: Age by Ethnicity</p>
+
+<pre><code>       Caucasian   Other
+</code></pre>
+
+<hr>
+
+<p>Older             20       6
+Younger           47      10</p>
+
+<p>Table: Age by Institution</p>
+
+<pre><code>       Harvard   IUPUI   MGH   MUSC   UofCinci   UofIowa   UofM   Yale
+</code></pre>
+
+<hr>
+
+<p>Older            3       0     1      3          3         4     10      2
+Younger          5       4     2      7         12         6     21      0</p>
+
+<p>Table: Age by Speciality</p>
+
+<pre><code>       Emergency Medicine   Family Practice   Internal Medicine   Med Peds   Ob Gyn   Other   Pediatrics   Psychiatry   Surgery   Transitional
+</code></pre>
+
+<hr>
+
+<p>Older                       1                 2                   9          0        0       5            2            0         4              3
+Younger                     2                 3                  12          2        1      17            7            3         5              4</p>
+
+<h2>{.smaller .columns-2}</h2>
+
+<p>Table: Ethnicity by Marial Status</p>
+
+<pre><code>         NotSingle   Single
+</code></pre>
+
+<hr>
+
+<p>Caucasian           35       32
+Other                3       14</p>
+
+<pre><code>p-value: 0.014
+</code></pre>
+
+<p>Table: Ethnicity by Child Status</p>
+
+<pre><code>         No   Yes
+</code></pre>
+
+<hr>
+
+<p>Caucasian    58     9
+Other        17     0</p>
+
+<ul>
+<li>jhkhkjhlk</li>
+</ul>
+
+<h2>{.smaller}</h2>
+
+<p>Table: Ethnicity by Institution</p>
+
+<pre><code>         Harvard   IUPUI   MGH   MUSC   UofCinci   UofIowa   UofM   Yale
+</code></pre>
+
+<hr>
+
+<p>Caucasian          5       4     2      9         13         9     24      1
+Other              3       0     1      2          2         1      7      1</p>
+
+<p>Table: Ethnicity by Speciality</p>
+
+<pre><code>         Emergency Medicine   Family Practice   Internal Medicine   Med Peds   Ob Gyn   Other   Pediatrics   Psychiatry   Surgery   Transitional
+</code></pre>
+
+<hr>
+
+<p>Caucasian                     2                 5                  15          2        1      18            9            3         7              4
+Other                         1                 0                   6          0        0       5            0            0         2              3</p>
+
+<h2>{.smaller}</h2>
+
+<p>Table: Marital Status by Child Status</p>
+
+<pre><code>         No   Yes
+</code></pre>
+
+<hr>
+
+<p>NotSingle    29     9
+Single       46     0</p>
+
+<p>Table: Marital Status by Institution</p>
+
+<pre><code>         Harvard   IUPUI   MGH   MUSC   UofCinci   UofIowa   UofM   Yale
+</code></pre>
+
+<hr>
+
+<p>NotSingle          3       2     0      7          4         6     16      0
+Single             5       2     3      4         11         4     15      2</p>
+
+<p>Table: Marital Status by Speciality</p>
+
+<pre><code>         Emergency Medicine   Family Practice   Internal Medicine   Med Peds   Ob Gyn   Other   Pediatrics   Psychiatry   Surgery   Transitional
+</code></pre>
+
+<hr>
+
+<p>NotSingle                     0                 4                   5          1        0      11            8            2         4              2
+Single                        3                 1                  16          1        1      12            1            1         5              5</p>
+
+<h2>{.smaller}</h2>
+
+<p>Table: Child Status by Institution</p>
+
+<pre><code>   Harvard   IUPUI   MGH   MUSC   UofCinci   UofIowa   UofM   Yale
+</code></pre>
+
+<hr>
+
+<p>No           6       4     3      8         15         9     28      2
+Yes          2       0     0      3          0         1      3      0</p>
+
+<p>Table: Child Status by Speciality</p>
+
+<pre><code>   Emergency Medicine   Family Practice   Internal Medicine   Med Peds   Ob Gyn   Other   Pediatrics   Psychiatry   Surgery   Transitional
+</code></pre>
+
+<hr>
+
+<p>No                      3                 3                  19          2        1      22            7            3         7              7
+Yes                     0                 2                   2          0        0       1            2            0         2              0</p>
+
+<h2>Early Family Experience (EFE0)</h2>
+
+<p><img src="assets/fig/unnamed-chunk-35.png" alt="plot of chunk unnamed-chunk-35"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-36.png" alt="plot of chunk unnamed-chunk-36"> </p>
+
+<h2>Emotional Experience (Neu0)</h2>
+
+<p><img src="assets/fig/unnamed-chunk-37.png" alt="plot of chunk unnamed-chunk-37"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-38.png" alt="plot of chunk unnamed-chunk-38"> </p>
+
+<h2>Global Methylation Correlation Plots</h2>
+
+<p><img src="assets/fig/unnamed-chunk-40.png" alt="plot of chunk unnamed-chunk-40"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Methylation Data'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title=''>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title=''>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title=''>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title=''>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title=''>
+         6
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
