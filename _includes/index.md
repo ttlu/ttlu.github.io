@@ -1,4 +1,4 @@
 ## Slides
 
-* [Methylation Slides](./methyl-slides)
-* [Zubieta Slides](./zubieta)
+* [Methylation](./methyl-slides)
+* [Zubieta](./zubieta)
