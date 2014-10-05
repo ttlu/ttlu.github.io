@@ -1,0 +1,4 @@
+title_tag_text: Tingting's Projects
+h1_tag_text: Tingting's Projects
+
+exclude: ["Procfile", "Gruntfile.js", "README.md", "package.json", "CNAME", "node_modules"]
