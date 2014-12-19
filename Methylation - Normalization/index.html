@@ -104,89 +104,89 @@
 
 <p>Within Array</p>
 
-<pre >* Background Level
-* Color/dye Bias
-* Infinium I/II type bias (partially a combo of first two)</pre>
+<pre >    - Background Level
+    - Color/dye Bias
+    - Infinium I/II type bias (partially a combo of first two)</pre>
 
 <p>Between Array</p>
 
-<pre >* detection efficiencies
-* material/ position </pre>
+<pre >    - detection efficiencies
+    - material/ position </pre>
 
 <p>Batch/slide Effect</p>
 
-<pre >* Slide to slide discrepancy 
-* different scanner/ day of experiment/ technician 
-* possible byproduct of unsupervised normalization [10]</pre>
+<pre >    - Slide to slide discrepancy 
+    - different scanner/ day of experiment/ technician 
+    - possible byproduct of unsupervised normalization [10]</pre>
 
 </article></slide><slide class=''><hgroup><h2>Within Array Normalization</h2></hgroup><article  id="within-array-normalization">
 
 <p>Background Level Correction</p>
 
-<pre >* type II assay use the same prob for measurement
-* signal is disturbed by the residual emission of the other dye
-* higher background for type II assay</pre>
+<pre >    - type II assay use the same prob for measurement
+    - signal is disturbed by the residual emission of the other dye
+    - higher background for type II assay</pre>
 
 <p>Color/dye Bias</p>
 
-<pre >* related to intensity measurement fidelity of the two color dyes
-* reduction of dynamic range of Infinium II beta value</pre>
+<pre >    - related to intensity measurement fidelity of the two color dyes
+    - reduction of dynamic range of Infinium II beta value</pre>
 
 <p>Infinium I/II type bias</p>
 
-<pre >* Infinium I assumption : regionally correlated within 50bp span (co-methylation theory)
-* Infinium II assumption : uses &#39;degenerate&#39; bases, independent of the neighboring sites</pre>
+<pre >    - Infinium I assumption : regionally correlated within 50bp span
+    - Infinium II assumption : independent of the neighboring sites</pre>
 
 </article></slide><slide class=''><hgroup><h2>Within Array Normalization : Methods</h2></hgroup><article  id="within-array-normalization-methods">
 
 <p>Background Level Correction</p>
 
-<pre >* Noob[1] &amp; Normexp[2]: based on normal-exponential convolution models
-* Goob[1]: Gamma convolution
-* Doob &amp; dfcm [1]: distribution- free convolution
-* lumi[3]: backgorund substraction based on the quantile of the control probes</pre>
+<ul>
+<li>Noob [1] &amp; Normexp[2]: based on normal-exponential convolution models</li>
+<li>Goob [1]: Gamma convolution</li>
+<li>Doob &amp; dfcm [1]: distribution- free convolution</li>
+<li>lumi [3]: backgorund substraction based on the quantile of the control probes</li>
+</ul>
 
 <p>Color/dye Bias</p>
 
-<pre >* Noob[1]
-* SSN[3,4] : Shift and scaling 
-* smooth quantile [3,4]</pre>
+<ul>
+<li>Noob [1]</li>
+<li>SSN [3,4] : Shift and scaling</li>
+<li>smooth quantile [3,4]</li>
+</ul>
 
 </article></slide><slide class=''><hgroup><h2>Within Array Normalization : Methods</h2></hgroup><article  id="within-array-normalization-methods-1">
 
 <p>Infinium I/II type bias</p>
 
-<pre >* PBC [5]: peak- based correction
-* QN [11]: Quantile Normalization (also between)
-* SQN [6]: QN - based, classify CpG by distance to CpG Island (also between array)
-* SWAN [7]: QN - based, classify probes by number of CpG they contain (also between array)
-* BMIQ [8]: QN - based, decomposes density probes into three beta- distributions.</pre>
+<ul>
+<li>PBC [5]: peak- based correction</li>
+<li>QN [11]: Quantile Normalization (also between)</li>
+<li>SQN [6]: QN - based, classify CpG by distance to CpG Island (also between array)</li>
+<li>SWAN [7]: QN - based, classify probes by number of CpG they contain (also between array)</li>
+<li>BMIQ [8]: QN - based, decomposes density probes into three beta- distributions.</li>
+</ul>
 
 </article></slide><slide class=''><hgroup><h2>Between Array Normalization; Methods</h2></hgroup><article  id="between-array-normalization-methods">
 
 <p>Between-array normalization methods have been developed to reduce these array-to-array variations by adjusting measurements at a global level [9].</p>
 
-<pre >* Quantile Normalization [11]
-* SQN[6], SWAN[7] 
-* smooth quantile [3,4], shift and scaling [3,4] 
-* nasen [12] : four separate QNs by type/color combo
-* FunNorm [10] : Functional normalization, extends the QN by adjusting for known 
-            covariates measuring unwanted variation. </pre>
+<ul>
+<li>Quantile Normalization [11]</li>
+<li>SQN[6], SWAN[7]</li>
+<li>smooth quantile [3,4], shift and scaling [3,4]</li>
+<li>nasen [12] : four separate QNs by type/color combo</li>
+<li>FunNorm [10] : Functional normalization, extends the QN by adjusting for known covariates measuring unwanted variation.</li>
+</ul>
 
 </article></slide><slide class=''><hgroup><h2>Batch/slide effect correction: Methods/tools</h2></hgroup><article  id="batchslide-effect-correction-methodstools">
 
-<pre >    * SVA[13,14] : surrogate variable analysis; construct SV based on data to be 
-    used in subsequent analyses to adjust for unknown, unmodeled, or latent 
-    sources of noise
-    
-    * ComBat [15]: empirical Bayes method, estimate the Location and scale model
-    parameters that represent the batch effects by “pooling information” across
-    sites in each batch to “shrink” the batch effect parameter estimates toward 
-    the overall mean of the batch effect estimates (across sites). These EB 
-    estimates are then used to adjust the data for batch effects, providing more 
-    robust adjustments for the batch effect on each site
-    
-    * SNM [16] : supervised normalization of microarrays</pre>
+<ul>
+<li><p>SVA[13,14] : surrogate variable analysis; construct SV based on data to be used in subsequent analyses to adjust for unknown, unmodeled, or latent sources of noise</p></li>
+<li><p>ComBat [15]: empirical Bayes method, estimate the Location and scale model parameters that represent the batch effects by “pooling information” across sites in each batch to “shrink” the batch effect parameter estimates toward the overall mean of the batch effect estimates (across sites). These EB estimates are then used to adjust the data for batch effects, providing more robust adjustments for the batch effect on each site</p></li>
+<li><p>SNM [16] : supervised normalization of microarrays</p></li>
+</ul>
 
 </article></slide><slide class=''><hgroup><h2>Summary</h2></hgroup><article  id="summary">
 
