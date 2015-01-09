@@ -5,7 +5,7 @@
 * [Methylation Part3 - Simplex Reg](./methyl-slides-part3)
 * [Intro to Methylation](./Intro-to-Methylation)
 * [DNA Methylation - Normalization](./Methylation-Normalization)
-* [Methyl DataProcessing](./methyl-dataProcessing)
+* [Methyl Data Processing](./methyldataprocessing)
 * [Zubieta](./zubieta)
 
 
