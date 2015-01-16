@@ -6,6 +6,7 @@
 * [Intro to Methylation](./Intro-to-Methylation)
 * [DNA Methylation - Normalization](./Methylation-Normalization)
 * [Methyl Data Processing](./methyldataprocessing)
+* [Methylation Reports](./Methylation-Reports)
 * [Zubieta](./zubieta)
 
 
