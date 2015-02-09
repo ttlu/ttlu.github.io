@@ -11,7 +11,7 @@
 	* [Part3 - Association Tests on Difference in Methylation](./Methylation-Reports/Part3)
 	* [Part4 - Correlation Analysis](./Methylation-Reports/Part4)
 	* [Part5 - Global Methylation Analysis](./Methylation-Reports/Part5)
-	* [Part5 - Mixed Models](./Methylation-Reports/Part6)
+	* [Part6 - Mixed Models](./Methylation-Reports/Part6)
 
 * [Zubieta](./zubieta)
 
