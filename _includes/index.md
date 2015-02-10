@@ -5,13 +5,15 @@
 * [Methylation Part3 - Simplex Reg](./methyl-slides-part3)
 * [Intro to Methylation](./Intro-to-Methylation)
 * [DNA Methylation - Normalization](./Methylation-Normalization)
-* [Methylation Reports]
+* Methylation Reports
 	* [Part1 - Data Summary](./Methylation-Reports/Part1)
 	* [Part2 - Association Tests on Baseline Methylation](./Methylation-Reports/Part2)
 	* [Part3 - Association Tests on Difference in Methylation](./Methylation-Reports/Part3)
 	* [Part4 - Correlation Analysis](./Methylation-Reports/Part4)
 	* [Part5 - Global Methylation Analysis](./Methylation-Reports/Part5)
-	* [Part6 - Mixed Models](./Methylation-Reports/Part6)
+	* [Part6 - Mixed Effect Models](./Methylation-Reports/Part6)
+	* [Part7 - Paired T-tests](./Methylation-Reports/Part7)
+
 
 * [Zubieta](./zubieta)
 
