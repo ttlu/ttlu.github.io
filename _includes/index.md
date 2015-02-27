@@ -13,6 +13,7 @@
 	* [Part5 - Global Methylation Analysis](./Methylation-Reports/Part5)
 	* [Part6 - Mixed Effect Models](./Methylation-Reports/Part6)
 	* [Part7 - Paired T-tests](./Methylation-Reports/Part7)
+	* [Part8 - Methylation Aging](./Methylation-Reports/Part8)
 
 
 * [Zubieta](./zubieta)
