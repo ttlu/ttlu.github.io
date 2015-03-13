@@ -14,6 +14,10 @@
 	* [Part6 - Mixed Effect Models](./Methylation-Reports/Part6)
 	* [Part7 - Paired T-tests](./Methylation-Reports/Part7)
 	* [Part8 - Methylation Aging](./Methylation-Reports/Part8)
+	* [Part9 - Aim2-LeaveOneOut](./Methylation-Reports/Part9)
+	* [Part10 - GlobalVariance-LeaveOneOut](./Methylation-Reports/Part10)
+
+
 
 
 * [Zubieta](./zubieta)
