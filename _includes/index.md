@@ -17,9 +17,6 @@
 	* [Part9 - Aim2-LeaveOneOut](./Methylation-Reports/Part9)
 	* [Part10 - GlobalVariance-LeaveOneOut](./Methylation-Reports/Part10)
 
-
-
-
 * [Zubieta](./zubieta)
 
 
