@@ -18,6 +18,5 @@
 	* [Part10 - GlobalVariance-LeaveOneOut](./Methylation-Reports/Part10)
 	* [Part11 - Blood Cell Types](./Methylation-Reports/Part11)
 
-* [Zubieta](./zubieta)
 
 
