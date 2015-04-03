@@ -16,7 +16,7 @@
 	* [Part8 - Methylation Aging](./Methylation-Reports/Part8)
 	* [Part9 - Aim2-LeaveOneOut](./Methylation-Reports/Part9)
 	* [Part10 - GlobalVariance-LeaveOneOut](./Methylation-Reports/Part10)
-	* [Part11 - Blood Compsition](./Methylation-Reports/Part11)
+	* [Part11 - Blood Cell Types](./Methylation-Reports/Part11)
 
 * [Zubieta](./zubieta)
 
